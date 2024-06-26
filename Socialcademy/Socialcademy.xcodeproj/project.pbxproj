@@ -59,11 +59,9 @@
 		D00FE56A2C2B8B3100BACD14 /* Socialcademy */ = {
 			isa = PBXGroup;
 			children = (
-				D00FE56D2C2B8B3100BACD14 /* ContentView.swift */,
-				D00FE5802C2C934200BACD14 /* GoogleService-Info.plist */,
 				D00FE56B2C2B8B3100BACD14 /* SocialcademyApp.swift */,
-				D00FE56F2C2B8B3200BACD14 /* Assets.xcassets */,
-				D00FE5712C2B8B3200BACD14 /* Preview Content */,
+				D00FE5822C2C9F8D00BACD14 /* Views */,
+				D00FE5832C2C9F9700BACD14 /* Resources */,
 			);
 			path = Socialcademy;
 			sourceTree = "<group>";
@@ -74,6 +72,24 @@
 				D00FE5722C2B8B3200BACD14 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D00FE5822C2C9F8D00BACD14 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D00FE56D2C2B8B3100BACD14 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D00FE5832C2C9F9700BACD14 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D00FE5802C2C934200BACD14 /* GoogleService-Info.plist */,
+				D00FE56F2C2B8B3200BACD14 /* Assets.xcassets */,
+				D00FE5712C2B8B3200BACD14 /* Preview Content */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,7 +305,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Socialcademy/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "Socialcademy/Resources/Preview\\ Content";
 				DEVELOPMENT_TEAM = 46LSLMQ27X;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -319,7 +335,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Socialcademy/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "Socialcademy/Resources/Preview\\ Content";
 				DEVELOPMENT_TEAM = 46LSLMQ27X;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
