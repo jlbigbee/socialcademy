@@ -15,6 +15,7 @@
 		D00FE57D2C2B8C8700BACD14 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = D00FE57C2C2B8C8700BACD14 /* FirebaseFirestore */; };
 		D00FE57F2C2B8C8700BACD14 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D00FE57E2C2B8C8700BACD14 /* FirebaseFirestoreSwift */; };
 		D00FE5812C2C934200BACD14 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D00FE5802C2C934200BACD14 /* GoogleService-Info.plist */; };
+		D00FE5862C2CA54600BACD14 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00FE5852C2CA54600BACD14 /* Post.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		D00FE56F2C2B8B3200BACD14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D00FE5722C2B8B3200BACD14 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D00FE5802C2C934200BACD14 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D00FE5852C2CA54600BACD14 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 		D00FE56A2C2B8B3100BACD14 /* Socialcademy */ = {
 			isa = PBXGroup;
 			children = (
+				D00FE5842C2CA52000BACD14 /* Models */,
 				D00FE56B2C2B8B3100BACD14 /* SocialcademyApp.swift */,
 				D00FE5822C2C9F8D00BACD14 /* Views */,
 				D00FE5832C2C9F9700BACD14 /* Resources */,
@@ -90,6 +93,14 @@
 				D00FE5712C2B8B3200BACD14 /* Preview Content */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		D00FE5842C2CA52000BACD14 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D00FE5852C2CA54600BACD14 /* Post.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,6 +182,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D00FE5862C2CA54600BACD14 /* Post.swift in Sources */,
 				D00FE56E2C2B8B3100BACD14 /* ContentView.swift in Sources */,
 				D00FE56C2C2B8B3100BACD14 /* SocialcademyApp.swift in Sources */,
 			);
