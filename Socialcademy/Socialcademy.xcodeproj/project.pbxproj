@@ -69,10 +69,10 @@
 		D00FE56A2C2B8B3100BACD14 /* Socialcademy */ = {
 			isa = PBXGroup;
 			children = (
+				D00FE56B2C2B8B3100BACD14 /* SocialcademyApp.swift */,
 				D00FE5922C2CDE2200BACD14 /* Repositories */,
 				D00FE58F2C2CCCAC00BACD14 /* View Models */,
 				D00FE5842C2CA52000BACD14 /* Models */,
-				D00FE56B2C2B8B3100BACD14 /* SocialcademyApp.swift */,
 				D00FE5822C2C9F8D00BACD14 /* Views */,
 				D00FE5832C2C9F9700BACD14 /* Resources */,
 			);

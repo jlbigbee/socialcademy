@@ -6,14 +6,12 @@
 //
 
 import Foundation
-
 import FirebaseFirestore
 import FirebaseFirestoreSwift
-import Foundation
 
 struct PostsRepository {
     static let postsReference = Firestore.firestore().collection("posts")
-
+    
     static func create(_ post: Post) async throws {
         let document = postsReference.document(post.id.uuidString)
         try await document.setData(from: post)
