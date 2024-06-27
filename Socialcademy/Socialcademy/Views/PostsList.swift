@@ -32,6 +32,9 @@ struct PostsList: View {
                 }
             }
         }
+        .onAppear {
+            viewModel.fetchPosts()
+        }
         .sheet(isPresented: $showNewPostForm) {
             NewPostForm(createAction: viewModel.makeCreateAction())
         }
