@@ -8,7 +8,14 @@
 import SwiftUI
 
 struct NewPostForm: View {
+    @Environment(\.dismiss) private var dismiss
+
     @State private var post = Post(title: "", content: "", authorName: "")
+    @State private var state = FormState.idle
+    
+    typealias CreateAction = (Post) async throws -> Void
+
+    let createAction: CreateAction
     
     var body: some View {
         NavigationView {
@@ -36,10 +43,25 @@ struct NewPostForm: View {
     }
     
     private func createPost() {
-        print("[NewPostForm] Creating new post...")
+        Task {
+            state = .working
+            do {
+                try await createAction(post)
+                dismiss()
+            } catch {
+                print("[NewPostForm] Cannot create post: \(error)")
+                state = .error
+            }
+        }
     }
 }
 
+
+private extension NewPostForm {
+    enum FormState {
+        case idle, working, error
+    }
+}
 #Preview {
-    NewPostForm()
+    NewPostForm(createAction: { _ in })
 }
