@@ -62,5 +62,5 @@ struct PostsList: View {
 }
 
 #Preview {
-    PostsList()
+    PostsList(viewModel: PostsViewModel(postsRepository: PostsRepositoryStub()))
 }
