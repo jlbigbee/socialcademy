@@ -20,6 +20,7 @@
 		D00FE58E2C2CC33F00BACD14 /* NewPostForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00FE58D2C2CC33F00BACD14 /* NewPostForm.swift */; };
 		D00FE5912C2CCCE400BACD14 /* PostsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00FE5902C2CCCE300BACD14 /* PostsViewModel.swift */; };
 		D00FE5942C2CDE7000BACD14 /* PostsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00FE5932C2CDE7000BACD14 /* PostsRepository.swift */; };
+		D00FE5972C2E76D800BACD14 /* Loadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00FE5962C2E76D800BACD14 /* Loadable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		D00FE58D2C2CC33F00BACD14 /* NewPostForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPostForm.swift; sourceTree = "<group>"; };
 		D00FE5902C2CCCE300BACD14 /* PostsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsViewModel.swift; sourceTree = "<group>"; };
 		D00FE5932C2CDE7000BACD14 /* PostsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsRepository.swift; sourceTree = "<group>"; };
+		D00FE5962C2E76D800BACD14 /* Loadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loadable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 		D00FE56A2C2B8B3100BACD14 /* Socialcademy */ = {
 			isa = PBXGroup;
 			children = (
+				D00FE5952C2E76AE00BACD14 /* Utilities */,
 				D00FE56B2C2B8B3100BACD14 /* SocialcademyApp.swift */,
 				D00FE5922C2CDE2200BACD14 /* Repositories */,
 				D00FE58F2C2CCCAC00BACD14 /* View Models */,
@@ -129,6 +132,14 @@
 				D00FE5932C2CDE7000BACD14 /* PostsRepository.swift */,
 			);
 			path = Repositories;
+			sourceTree = "<group>";
+		};
+		D00FE5952C2E76AE00BACD14 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				D00FE5962C2E76D800BACD14 /* Loadable.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,6 +248,7 @@
 				D00FE5942C2CDE7000BACD14 /* PostsRepository.swift in Sources */,
 				D00FE5912C2CCCE400BACD14 /* PostsViewModel.swift in Sources */,
 				D00FE58A2C2CA7F500BACD14 /* PostRow.swift in Sources */,
+				D00FE5972C2E76D800BACD14 /* Loadable.swift in Sources */,
 				D00FE5882C2CA76100BACD14 /* PostsList.swift in Sources */,
 				D00FE58E2C2CC33F00BACD14 /* NewPostForm.swift in Sources */,
 			);
