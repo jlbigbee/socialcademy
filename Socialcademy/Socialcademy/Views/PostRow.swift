@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct PostRow: View {
+    @State private var showConfirmationDialog = false
+
     typealias DeleteAction = () async throws -> Void
     
     let post: Post
@@ -30,7 +32,9 @@ struct PostRow: View {
             Text(post.content)
             HStack {
                 Spacer()
-                Button(role: .destructive, action: deletePost) {
+                Button(role: .destructive, action: {
+                    showConfirmationDialog = true
+                }) {
                     Label("Delete", systemImage: "trash")
                 }
                 .labelStyle(.iconOnly)
@@ -38,6 +42,9 @@ struct PostRow: View {
                 }
         }
         .padding(.vertical)
+        .confirmationDialog("Are you sure you want to delete this post?", isPresented: $showConfirmationDialog, titleVisibility: .visible) {
+            Button("Delete", role: .destructive, action: deletePost)
+        }
     }
     
     private func deletePost() {
