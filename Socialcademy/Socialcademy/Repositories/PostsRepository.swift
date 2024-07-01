@@ -55,6 +55,10 @@ private extension DocumentReference {
 
 #if DEBUG
 struct PostsRepositoryStub: PostsRepositoryProtocol {
+    func delete(_ post: Post) async throws {
+        
+    }
+    
     let state: Loadable<[Post]>
       
       func fetchPosts() async throws -> [Post] {
