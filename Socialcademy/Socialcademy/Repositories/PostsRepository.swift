@@ -48,10 +48,12 @@ private extension DocumentReference {
 
 #if DEBUG
 struct PostsRepositoryStub: PostsRepositoryProtocol {
-    func fetchPosts() async throws -> [Post] {
-        return []
-    }
-    
-    func create(_ post: Post) async throws {}
+    let state: Loadable<[Post]>
+      
+      func fetchPosts() async throws -> [Post] {
+          return try await state.simulate()
+      }
+      
+      func create(_ post: Post) async throws {}
 }
 #endif
