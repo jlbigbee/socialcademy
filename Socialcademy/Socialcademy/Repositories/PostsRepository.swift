@@ -12,6 +12,7 @@ import FirebaseFirestoreSwift
 protocol PostsRepositoryProtocol {
     func fetchPosts() async throws -> [Post]
     func create(_ post: Post) async throws
+    func delete(_ post: Post) async throws
 }
 
 struct PostsRepository: PostsRepositoryProtocol {
