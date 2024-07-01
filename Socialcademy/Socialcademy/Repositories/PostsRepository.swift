@@ -30,6 +30,12 @@ struct PostsRepository: PostsRepositoryProtocol {
             try! document.data(as: Post.self)
         }
     }
+    
+    func delete(_ post: Post) async throws {
+        let document = postsReference.document(post.id.uuidString)
+        try await document.delete()
+    }
+
 }
 
 private extension DocumentReference {
