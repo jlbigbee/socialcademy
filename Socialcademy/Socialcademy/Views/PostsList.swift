@@ -43,6 +43,7 @@ struct PostsList: View {
                             )
                         }
                     }
+                    .animation(.default, value: posts)
                     .searchable(text: $searchText)
                 }
             }
