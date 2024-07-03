@@ -11,32 +11,24 @@ struct PostRow: View {
     @ObservedObject var viewModel: PostRowViewModel
     
     @State private var showConfirmationDialog = false
-    @State private var error: Error?
-
-    typealias Action = () async throws -> Void
-    
-    let post: Post
-    let deleteAction: Action
-    let favoriteAction: Action
-    
     
     var body: some View {
         VStack(alignment: .leading, spacing: 10) {
             HStack {
-                Text(post.authorName)
+                Text(viewModel.authorName)
                     .font(.subheadline)
                     .fontWeight(.medium)
                 Spacer()
-                Text(post.timestamp.formatted(date: .abbreviated, time: .omitted))
+                Text(viewModel.timestamp.formatted(date: .abbreviated, time: .omitted))
                     .font(.caption)
             }
             .foregroundColor(.gray)
-            Text(post.title)
+            Text(viewModel.title)
                 .font(.title3)
                 .fontWeight(.semibold)
-            Text(post.content)
+            Text(viewModel.content)
             HStack {
-                FavoriteButton(isFavorite: post.isFavorite, action: viewModel.favoritePost)
+                FavoriteButton(isFavorite: viewModel.isFavorite, action: viewModel.favoritePost)
                 Spacer()
                 Button(role: .destructive, action: {
                     showConfirmationDialog = true
@@ -49,9 +41,11 @@ struct PostRow: View {
         }
         .padding(.vertical)
         .confirmationDialog("Are you sure you want to delete this post?", isPresented: $showConfirmationDialog, titleVisibility: .visible) {
-            Button("Delete", role: .destructive, action: viewModel.deletePost)
+            Button("Delete", role: .destructive, action: {
+                viewModel.deletePost()
+            })
         }
-        .alert("Cannot Delete Post", error: $error)
+        .alert("Cannot Delete Post", error: $viewModel.error)
     }
 }
 
@@ -77,6 +71,6 @@ private extension PostRow {
 
 #Preview {
     List {
-        PostRow(viewModel: PostRowViewModel(post: Post.testPost, deleteAction: {}, favoriteAction: {}), post: Post.testPost, deleteAction: {}, favoriteAction: {})
+        PostRow(viewModel: PostRowViewModel(post: Post.testPost, deleteAction: {}, favoriteAction: {}))
     }
 }
