@@ -22,6 +22,15 @@ class PostsViewModel: ObservableObject {
         self.filter = filter
         self.postsRepository = postsRepository
     }
+    
+    var title: String {
+        switch filter {
+        case .all:
+            return "Posts"
+        case .favorites:
+            return "Favorites"
+        }
+    }
 
     func fetchPosts() {
         Task {
