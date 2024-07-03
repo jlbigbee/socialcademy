@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+// MARK: - PostRow
+
 struct PostRow: View {
     @ObservedObject var viewModel: PostRowViewModel
     
@@ -15,9 +17,7 @@ struct PostRow: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 10) {
             HStack {
-                Text(viewModel.author.name)
-                    .font(.subheadline)
-                    .fontWeight(.medium)
+                AuthorView(author: viewModel.author)
                 Spacer()
                 Text(viewModel.timestamp.formatted(date: .abbreviated, time: .omitted))
                     .font(.caption)
@@ -28,7 +28,9 @@ struct PostRow: View {
                 .fontWeight(.semibold)
             Text(viewModel.content)
             HStack {
-                FavoriteButton(isFavorite: viewModel.isFavorite, action: viewModel.favoritePost)
+                FavoriteButton(isFavorite: viewModel.isFavorite, action: {
+                    viewModel.favoritePost()
+                })
                 Spacer()
                 if viewModel.canDeletePost {
                     Button(role: .destructive, action: {
@@ -39,17 +41,38 @@ struct PostRow: View {
                 }
             }
             .labelStyle(.iconOnly)
-            .buttonStyle(.borderless)
         }
-        .padding(.vertical)
+        .padding()
         .confirmationDialog("Are you sure you want to delete this post?", isPresented: $showConfirmationDialog, titleVisibility: .visible) {
             Button("Delete", role: .destructive, action: {
                 viewModel.deletePost()
             })
         }
-        .alert("Cannot Delete Post", error: $viewModel.error)
+        .alert("Error", error: $viewModel.error)
     }
 }
+
+// MARK: - AuthorView
+
+private extension PostRow {
+    struct AuthorView: View {
+        let author: User
+        
+        @EnvironmentObject private var factory: ViewModelFactory
+        
+        var body: some View {
+            NavigationLink {
+                PostsList(viewModel: factory.makePostsViewModel(filter: .author(author)))
+            } label: {
+                Text(author.name)
+                    .font(.subheadline)
+                    .fontWeight(.medium)
+            }
+        }
+    }
+}
+
+// MARK: - FavoriteButton
 
 private extension PostRow {
     struct FavoriteButton: View {
@@ -66,13 +89,12 @@ private extension PostRow {
             }
             .foregroundColor(isFavorite ? .red : .gray)
             .animation(.default, value: isFavorite)
-
         }
     }
 }
 
+
 #Preview {
-    List {
         PostRow(viewModel: PostRowViewModel(post: Post.testPost, deleteAction: {}, favoriteAction: {}))
-    }
+            .previewLayout(.sizeThatFits)
 }
