@@ -33,6 +33,7 @@
 		D00FE5AE2C3531A100BACD14 /* FormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00FE5AD2C3531A100BACD14 /* FormViewModel.swift */; };
 		D00FE5B02C353C1A00BACD14 /* PrimaryButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00FE5AF2C353C1A00BACD14 /* PrimaryButtonStyle.swift */; };
 		D00FE5B22C353F0200BACD14 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00FE5B12C353F0200BACD14 /* User.swift */; };
+		D00FE5B62C35473D00BACD14 /* ViewModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00FE5B52C35473D00BACD14 /* ViewModelFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +60,7 @@
 		D00FE5AD2C3531A100BACD14 /* FormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewModel.swift; sourceTree = "<group>"; };
 		D00FE5AF2C353C1A00BACD14 /* PrimaryButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButtonStyle.swift; sourceTree = "<group>"; };
 		D00FE5B12C353F0200BACD14 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		D00FE5B52C35473D00BACD14 /* ViewModelFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +157,7 @@
 				D00FE5902C2CCCE300BACD14 /* PostsViewModel.swift */,
 				D00FE5AD2C3531A100BACD14 /* FormViewModel.swift */,
 				D00FE5A72C352F4800BACD14 /* AuthViewModel.swift */,
+				D00FE5B52C35473D00BACD14 /* ViewModelFactory.swift */,
 				D00FE59D2C350D4800BACD14 /* PostRowViewModel.swift */,
 			);
 			path = "View Models";
@@ -316,6 +319,7 @@
 				D00FE5882C2CA76100BACD14 /* PostsList.swift in Sources */,
 				D00FE59C2C32C91000BACD14 /* Alert+Error.swift in Sources */,
 				D00FE5A82C352F4800BACD14 /* AuthViewModel.swift in Sources */,
+				D00FE5B62C35473D00BACD14 /* ViewModelFactory.swift in Sources */,
 				D00FE5AA2C35309E00BACD14 /* AuthView.swift in Sources */,
 				D00FE58E2C2CC33F00BACD14 /* NewPostForm.swift in Sources */,
 				D00FE5AE2C3531A100BACD14 /* FormViewModel.swift in Sources */,

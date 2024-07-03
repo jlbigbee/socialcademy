@@ -12,6 +12,7 @@ import FirebaseFirestoreSwift
 // MARK: - PostsRepositoryProtocol
 
 protocol PostsRepositoryProtocol {
+    var user: User { get }
     func fetchAllPosts() async throws -> [Post]
     func fetchFavoritePosts() async throws -> [Post]
     func create(_ post: Post) async throws
@@ -25,7 +26,7 @@ protocol PostsRepositoryProtocol {
 #if DEBUG
 struct PostsRepositoryStub: PostsRepositoryProtocol {
     let state: Loadable<[Post]>
-    var user = User.testUser
+    let user = User.testUser
     
     func fetchAllPosts() async throws -> [Post] {
         return try await state.simulate()
