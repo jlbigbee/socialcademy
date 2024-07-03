@@ -47,7 +47,7 @@ struct PostsRepositoryStub: PostsRepositoryProtocol {
 // MARK: - PostsRepository
 
 struct PostsRepository: PostsRepositoryProtocol {
-    let postsReference = Firestore.firestore().collection("posts_v1")
+    let postsReference = Firestore.firestore().collection("posts_v2")
     
     func fetchAllPosts() async throws -> [Post] {
         let snapshot = try await postsReference
