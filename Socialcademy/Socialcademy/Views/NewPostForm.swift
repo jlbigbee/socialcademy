@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+// MARK: - NewPostForm
+
 struct NewPostForm: View {
     @StateObject var viewModel: FormViewModel<Post>
     
@@ -18,6 +20,7 @@ struct NewPostForm: View {
                 Section {
                     TextField("Title", text: $viewModel.title)
                 }
+                ImageSection(imageURL: $viewModel.imageURL)
                 Section("Content") {
                     TextEditor(text: $viewModel.content)
                         .multilineTextAlignment(.leading)
@@ -41,30 +44,40 @@ struct NewPostForm: View {
         .alert("Cannot Create Post", error: $viewModel.error)
         .disabled(viewModel.isWorking)
         .onChange(of: viewModel.isWorking) { isWorking in
-            guard !isWorking, viewModel.error == nil else { return }
+            guard !isWorking else { return }
             dismiss()
         }
     }
-    
 }
 
-// MARK: - FormState
+// MARK: - ImageSection
 
 private extension NewPostForm {
-    enum FormState {
-        case idle, working, error
+    struct ImageSection: View {
+        @Binding var imageURL: URL?
         
-        var isError: Bool {
-            get {
-                self == .error
-            }
-            set {
-                guard !newValue else { return }
-                self = .idle
+        var body: some View {
+            Section("Image") {
+                AsyncImage(url: imageURL) { image in
+                    image
+                        .resizable()
+                        .scaledToFit()
+                        .clipShape(RoundedRectangle(cornerRadius: 10))
+                } placeholder: {
+                    EmptyView()
+                }
+                ImagePickerButton(imageURL: $imageURL) {
+                    Label("Choose Image", systemImage: "photo.fill")
+                }
             }
         }
     }
 }
 
-#Preview {
-    NewPostForm(viewModel: FormViewModel(initialValue: Post.testPost, action: { _ in }))}
+// MARK: - Preview
+
+struct NewPostForm_Previews: PreviewProvider {
+    static var previews: some View {
+        NewPostForm(viewModel: FormViewModel<Post>(initialValue: Post.testPost, action: { _ in }))
+    }
+}

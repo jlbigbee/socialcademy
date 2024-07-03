@@ -43,6 +43,8 @@
 		D00FE5C62C35BBD300BACD14 /* CommentRowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00FE5C52C35BBD300BACD14 /* CommentRowViewModel.swift */; };
 		D00FE5C82C35BC6E00BACD14 /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00FE5C72C35BC6E00BACD14 /* ErrorHandler.swift */; };
 		D00FE5CA2C35C31200BACD14 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = D00FE5C92C35C31200BACD14 /* FirebaseStorage */; };
+		D00FE5CC2C35C4E600BACD14 /* StorageFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00FE5CB2C35C4E600BACD14 /* StorageFile.swift */; };
+		D00FE5CE2C35C59100BACD14 /* ImagePickerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00FE5CD2C35C59100BACD14 /* ImagePickerButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,6 +80,8 @@
 		D00FE5C12C35BA7500BACD14 /* CommentRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentRow.swift; sourceTree = "<group>"; };
 		D00FE5C52C35BBD300BACD14 /* CommentRowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentRowViewModel.swift; sourceTree = "<group>"; };
 		D00FE5C72C35BC6E00BACD14 /* ErrorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandler.swift; sourceTree = "<group>"; };
+		D00FE5CB2C35C4E600BACD14 /* StorageFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageFile.swift; sourceTree = "<group>"; };
+		D00FE5CD2C35C59100BACD14 /* ImagePickerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,6 +204,7 @@
 			children = (
 				D00FE5BB2C35B99300BACD14 /* Firestore+Extensions.swift */,
 				D00FE5962C2E76D800BACD14 /* Loadable.swift */,
+				D00FE5CB2C35C4E600BACD14 /* StorageFile.swift */,
 				D00FE5C72C35BC6E00BACD14 /* ErrorHandler.swift */,
 			);
 			path = Utilities;
@@ -209,6 +214,7 @@
 			isa = PBXGroup;
 			children = (
 				D00FE5992C2EB71E00BACD14 /* EmptyListView.swift */,
+				D00FE5CD2C35C59100BACD14 /* ImagePickerButton.swift */,
 				D00FE59B2C32C91000BACD14 /* Alert+Error.swift */,
 				D00FE5AF2C353C1A00BACD14 /* PrimaryButtonStyle.swift */,
 			);
@@ -344,9 +350,11 @@
 				D00FE58A2C2CA7F500BACD14 /* PostRow.swift in Sources */,
 				D00FE5A62C352E1900BACD14 /* AuthService.swift in Sources */,
 				D00FE5C02C35BA4900BACD14 /* CommentsList.swift in Sources */,
+				D00FE5CE2C35C59100BACD14 /* ImagePickerButton.swift in Sources */,
 				D00FE5972C2E76D800BACD14 /* Loadable.swift in Sources */,
 				D00FE5AC2C3530EE00BACD14 /* ProfileView.swift in Sources */,
 				D00FE5B82C35B91F00BACD14 /* Comment.swift in Sources */,
+				D00FE5CC2C35C4E600BACD14 /* StorageFile.swift in Sources */,
 				D00FE5BE2C35BA2800BACD14 /* CommentsViewModel.swift in Sources */,
 				D00FE5C62C35BBD300BACD14 /* CommentRowViewModel.swift in Sources */,
 				D00FE5882C2CA76100BACD14 /* PostsList.swift in Sources */,
