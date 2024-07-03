@@ -30,6 +30,7 @@
 		D00FE5A82C352F4800BACD14 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00FE5A72C352F4800BACD14 /* AuthViewModel.swift */; };
 		D00FE5AA2C35309E00BACD14 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00FE5A92C35309E00BACD14 /* AuthView.swift */; };
 		D00FE5AC2C3530EE00BACD14 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00FE5AB2C3530EE00BACD14 /* ProfileView.swift */; };
+		D00FE5AE2C3531A100BACD14 /* FormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00FE5AD2C3531A100BACD14 /* FormViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,7 @@
 		D00FE5A72C352F4800BACD14 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		D00FE5A92C35309E00BACD14 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
 		D00FE5AB2C3530EE00BACD14 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		D00FE5AD2C3531A100BACD14 /* FormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				D00FE5902C2CCCE300BACD14 /* PostsViewModel.swift */,
+				D00FE5AD2C3531A100BACD14 /* FormViewModel.swift */,
 				D00FE5A72C352F4800BACD14 /* AuthViewModel.swift */,
 				D00FE59D2C350D4800BACD14 /* PostRowViewModel.swift */,
 			);
@@ -308,6 +311,7 @@
 				D00FE5A82C352F4800BACD14 /* AuthViewModel.swift in Sources */,
 				D00FE5AA2C35309E00BACD14 /* AuthView.swift in Sources */,
 				D00FE58E2C2CC33F00BACD14 /* NewPostForm.swift in Sources */,
+				D00FE5AE2C3531A100BACD14 /* FormViewModel.swift in Sources */,
 				D00FE59A2C2EB71E00BACD14 /* EmptyListView.swift in Sources */,
 				D00FE5A02C35215300BACD14 /* MainTabView.swift in Sources */,
 			);
