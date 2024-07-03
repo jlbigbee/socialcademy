@@ -86,9 +86,11 @@ struct PostsRepository: PostsRepositoryProtocol {
     }
     
     func delete(_ post: Post) async throws {
+        precondition(canDelete(post))
         let document = postsReference.document(post.id.uuidString)
         try await document.delete()
     }
+
     
     func favorite(_ post: Post) async throws {
         let document = postsReference.document(post.id.uuidString)
@@ -98,6 +100,12 @@ struct PostsRepository: PostsRepositoryProtocol {
     func unfavorite(_ post: Post) async throws {
         let document = postsReference.document(post.id.uuidString)
         try await document.setData(["isFavorite": false], merge: true)
+    }
+}
+
+extension PostsRepositoryProtocol {
+    func canDelete(_ post: Post) -> Bool {
+        post.author.id == user.id
     }
 }
 
