@@ -41,10 +41,12 @@
 		D00FE5C02C35BA4900BACD14 /* CommentsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00FE5BF2C35BA4900BACD14 /* CommentsList.swift */; };
 		D00FE5C22C35BA7500BACD14 /* CommentRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00FE5C12C35BA7500BACD14 /* CommentRow.swift */; };
 		D00FE5C62C35BBD300BACD14 /* CommentRowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00FE5C52C35BBD300BACD14 /* CommentRowViewModel.swift */; };
-		D00FE5C82C35BC6E00BACD14 /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00FE5C72C35BC6E00BACD14 /* ErrorHandler.swift */; };
+		D00FE5C82C35BC6E00BACD14 /* StateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00FE5C72C35BC6E00BACD14 /* StateManager.swift */; };
 		D00FE5CA2C35C31200BACD14 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = D00FE5C92C35C31200BACD14 /* FirebaseStorage */; };
 		D00FE5CC2C35C4E600BACD14 /* StorageFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00FE5CB2C35C4E600BACD14 /* StorageFile.swift */; };
 		D00FE5CE2C35C59100BACD14 /* ImagePickerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00FE5CD2C35C59100BACD14 /* ImagePickerButton.swift */; };
+		D00FE5D02C35CB9800BACD14 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00FE5CF2C35CB9800BACD14 /* ProfileViewModel.swift */; };
+		D00FE5D22C35CE7C00BACD14 /* ProfileImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00FE5D12C35CE7C00BACD14 /* ProfileImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -79,9 +81,11 @@
 		D00FE5BF2C35BA4900BACD14 /* CommentsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsList.swift; sourceTree = "<group>"; };
 		D00FE5C12C35BA7500BACD14 /* CommentRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentRow.swift; sourceTree = "<group>"; };
 		D00FE5C52C35BBD300BACD14 /* CommentRowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentRowViewModel.swift; sourceTree = "<group>"; };
-		D00FE5C72C35BC6E00BACD14 /* ErrorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandler.swift; sourceTree = "<group>"; };
+		D00FE5C72C35BC6E00BACD14 /* StateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateManager.swift; sourceTree = "<group>"; };
 		D00FE5CB2C35C4E600BACD14 /* StorageFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageFile.swift; sourceTree = "<group>"; };
 		D00FE5CD2C35C59100BACD14 /* ImagePickerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerButton.swift; sourceTree = "<group>"; };
+		D00FE5CF2C35CB9800BACD14 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		D00FE5D12C35CE7C00BACD14 /* ProfileImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +187,7 @@
 				D00FE5AD2C3531A100BACD14 /* FormViewModel.swift */,
 				D00FE5A72C352F4800BACD14 /* AuthViewModel.swift */,
 				D00FE5B52C35473D00BACD14 /* ViewModelFactory.swift */,
+				D00FE5CF2C35CB9800BACD14 /* ProfileViewModel.swift */,
 				D00FE5BD2C35BA2800BACD14 /* CommentsViewModel.swift */,
 				D00FE5C52C35BBD300BACD14 /* CommentRowViewModel.swift */,
 				D00FE59D2C350D4800BACD14 /* PostRowViewModel.swift */,
@@ -205,7 +210,7 @@
 				D00FE5BB2C35B99300BACD14 /* Firestore+Extensions.swift */,
 				D00FE5962C2E76D800BACD14 /* Loadable.swift */,
 				D00FE5CB2C35C4E600BACD14 /* StorageFile.swift */,
-				D00FE5C72C35BC6E00BACD14 /* ErrorHandler.swift */,
+				D00FE5C72C35BC6E00BACD14 /* StateManager.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -217,6 +222,7 @@
 				D00FE5CD2C35C59100BACD14 /* ImagePickerButton.swift */,
 				D00FE59B2C32C91000BACD14 /* Alert+Error.swift */,
 				D00FE5AF2C353C1A00BACD14 /* PrimaryButtonStyle.swift */,
+				D00FE5D12C35CE7C00BACD14 /* ProfileImage.swift */,
 			);
 			path = "Supporting Views";
 			sourceTree = "<group>";
@@ -340,6 +346,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D00FE5B02C353C1A00BACD14 /* PrimaryButtonStyle.swift in Sources */,
+				D00FE5D22C35CE7C00BACD14 /* ProfileImage.swift in Sources */,
 				D00FE5BA2C35B94100BACD14 /* CommentsRepository.swift in Sources */,
 				D00FE59E2C350D4800BACD14 /* PostRowViewModel.swift in Sources */,
 				D00FE5862C2CA54600BACD14 /* Post.swift in Sources */,
@@ -351,6 +358,7 @@
 				D00FE5A62C352E1900BACD14 /* AuthService.swift in Sources */,
 				D00FE5C02C35BA4900BACD14 /* CommentsList.swift in Sources */,
 				D00FE5CE2C35C59100BACD14 /* ImagePickerButton.swift in Sources */,
+				D00FE5D02C35CB9800BACD14 /* ProfileViewModel.swift in Sources */,
 				D00FE5972C2E76D800BACD14 /* Loadable.swift in Sources */,
 				D00FE5AC2C3530EE00BACD14 /* ProfileView.swift in Sources */,
 				D00FE5B82C35B91F00BACD14 /* Comment.swift in Sources */,
@@ -360,7 +368,7 @@
 				D00FE5882C2CA76100BACD14 /* PostsList.swift in Sources */,
 				D00FE59C2C32C91000BACD14 /* Alert+Error.swift in Sources */,
 				D00FE5A82C352F4800BACD14 /* AuthViewModel.swift in Sources */,
-				D00FE5C82C35BC6E00BACD14 /* ErrorHandler.swift in Sources */,
+				D00FE5C82C35BC6E00BACD14 /* StateManager.swift in Sources */,
 				D00FE5B62C35473D00BACD14 /* ViewModelFactory.swift in Sources */,
 				D00FE5AA2C35309E00BACD14 /* AuthView.swift in Sources */,
 				D00FE58E2C2CC33F00BACD14 /* NewPostForm.swift in Sources */,

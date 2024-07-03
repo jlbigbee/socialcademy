@@ -11,10 +11,10 @@ struct AuthView: View {
     @StateObject var viewModel = AuthViewModel()
     
     var body: some View {
-        if let user = viewModel.user {
+        if let viewModelFactory = viewModel.makeViewModelFactory() {
               MainTabView()
-                .environmentObject(ViewModelFactory(user: user))
-        } else {
+                  .environmentObject(viewModelFactory)
+          } else {
             NavigationView {
                 SignInForm(viewModel: viewModel.makeSignInViewModel()) {
                     NavigationLink("Create Account", destination: CreateAccountForm(viewModel: viewModel.makeCreateAccountViewModel()))

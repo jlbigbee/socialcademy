@@ -24,7 +24,7 @@ struct MainTabView: View {
             .tabItem {
                 Label("Favorites", systemImage: "heart")
             }
-            ProfileView()
+            ProfileView(viewModel: factory.makeProfileViewModel())
                 .tabItem {
                     Label("Profile", systemImage: "person")
                 }
@@ -32,7 +32,9 @@ struct MainTabView: View {
     }
 }
 
-#Preview {
-    MainTabView()
-        .environmentObject(ViewModelFactory.preview)
+struct MainTabView_Previews: PreviewProvider {
+    static var previews: some View {
+        MainTabView()
+            .environmentObject(ViewModelFactory.preview)
+    }
 }
