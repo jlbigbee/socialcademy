@@ -31,6 +31,7 @@
 		D00FE5AA2C35309E00BACD14 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00FE5A92C35309E00BACD14 /* AuthView.swift */; };
 		D00FE5AC2C3530EE00BACD14 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00FE5AB2C3530EE00BACD14 /* ProfileView.swift */; };
 		D00FE5AE2C3531A100BACD14 /* FormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00FE5AD2C3531A100BACD14 /* FormViewModel.swift */; };
+		D00FE5B02C353C1A00BACD14 /* PrimaryButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00FE5AF2C353C1A00BACD14 /* PrimaryButtonStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +56,7 @@
 		D00FE5A92C35309E00BACD14 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
 		D00FE5AB2C3530EE00BACD14 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		D00FE5AD2C3531A100BACD14 /* FormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewModel.swift; sourceTree = "<group>"; };
+		D00FE5AF2C353C1A00BACD14 /* PrimaryButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButtonStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +178,7 @@
 			children = (
 				D00FE5992C2EB71E00BACD14 /* EmptyListView.swift */,
 				D00FE59B2C32C91000BACD14 /* Alert+Error.swift */,
+				D00FE5AF2C353C1A00BACD14 /* PrimaryButtonStyle.swift */,
 			);
 			path = "Supporting Views";
 			sourceTree = "<group>";
@@ -297,6 +300,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D00FE5B02C353C1A00BACD14 /* PrimaryButtonStyle.swift in Sources */,
 				D00FE59E2C350D4800BACD14 /* PostRowViewModel.swift in Sources */,
 				D00FE5862C2CA54600BACD14 /* Post.swift in Sources */,
 				D00FE56C2C2B8B3100BACD14 /* SocialcademyApp.swift in Sources */,
