@@ -23,6 +23,7 @@
 		D00FE5972C2E76D800BACD14 /* Loadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00FE5962C2E76D800BACD14 /* Loadable.swift */; };
 		D00FE59A2C2EB71E00BACD14 /* EmptyListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00FE5992C2EB71E00BACD14 /* EmptyListView.swift */; };
 		D00FE59C2C32C91000BACD14 /* Alert+Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00FE59B2C32C91000BACD14 /* Alert+Error.swift */; };
+		D00FE59E2C350D4800BACD14 /* PostRowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00FE59D2C350D4800BACD14 /* PostRowViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		D00FE5962C2E76D800BACD14 /* Loadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loadable.swift; sourceTree = "<group>"; };
 		D00FE5992C2EB71E00BACD14 /* EmptyListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyListView.swift; sourceTree = "<group>"; };
 		D00FE59B2C32C91000BACD14 /* Alert+Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Alert+Error.swift"; sourceTree = "<group>"; };
+		D00FE59D2C350D4800BACD14 /* PostRowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRowViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				D00FE5902C2CCCE300BACD14 /* PostsViewModel.swift */,
+				D00FE59D2C350D4800BACD14 /* PostRowViewModel.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D00FE59E2C350D4800BACD14 /* PostRowViewModel.swift in Sources */,
 				D00FE5862C2CA54600BACD14 /* Post.swift in Sources */,
 				D00FE56C2C2B8B3100BACD14 /* SocialcademyApp.swift in Sources */,
 				D00FE5942C2CDE7000BACD14 /* PostsRepository.swift in Sources */,

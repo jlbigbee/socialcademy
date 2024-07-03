@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct PostRow: View {
+    @ObservedObject var viewModel: PostRowViewModel
+    
     @State private var showConfirmationDialog = false
     @State private var error: Error?
 
@@ -34,7 +36,7 @@ struct PostRow: View {
                 .fontWeight(.semibold)
             Text(post.content)
             HStack {
-                FavoriteButton(isFavorite: post.isFavorite, action: favoritePost)
+                FavoriteButton(isFavorite: post.isFavorite, action: viewModel.favoritePost)
                 Spacer()
                 Button(role: .destructive, action: {
                     showConfirmationDialog = true
@@ -47,32 +49,9 @@ struct PostRow: View {
         }
         .padding(.vertical)
         .confirmationDialog("Are you sure you want to delete this post?", isPresented: $showConfirmationDialog, titleVisibility: .visible) {
-            Button("Delete", role: .destructive, action: deletePost)
+            Button("Delete", role: .destructive, action: viewModel.deletePost)
         }
         .alert("Cannot Delete Post", error: $error)
-
-    }
-    
-    private func deletePost() {
-        Task {
-            do {
-                try await deleteAction()
-            } catch {
-                print("[PostRow] Cannot delete post: \(error)")
-                self.error = error
-            }
-        }
-    }
-    
-    private func favoritePost() {
-        Task {
-            do {
-                try await favoriteAction()
-            } catch {
-                print("[PostRow] Cannot favorite post: \(error)")
-                self.error = error
-            }
-        }
     }
 }
 
@@ -98,6 +77,6 @@ private extension PostRow {
 
 #Preview {
     List {
-        PostRow(post: Post.testPost, deleteAction: {}, favoriteAction: {})
+        PostRow(viewModel: PostRowViewModel(post: Post.testPost, deleteAction: {}, favoriteAction: {}), post: Post.testPost, deleteAction: {}, favoriteAction: {})
     }
 }

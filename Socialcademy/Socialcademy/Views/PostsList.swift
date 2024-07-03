@@ -38,6 +38,7 @@ struct PostsList: View {
                     List(posts) { post in
                         if searchText.isEmpty || post.contains(searchText) {
                             PostRow(
+                                viewModel: viewModel,
                                 post: post,
                                 deleteAction: viewModel.makeDeleteAction(for: post),
                                 favoriteAction: viewModel.makeFavoriteAction(for: post)
