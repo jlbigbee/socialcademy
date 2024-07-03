@@ -28,6 +28,7 @@
 		D00FE5A32C352D7A00BACD14 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = D00FE5A22C352D7A00BACD14 /* FirebaseAuth */; };
 		D00FE5A62C352E1900BACD14 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00FE5A52C352E1900BACD14 /* AuthService.swift */; };
 		D00FE5A82C352F4800BACD14 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00FE5A72C352F4800BACD14 /* AuthViewModel.swift */; };
+		D00FE5AA2C35309E00BACD14 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00FE5A92C35309E00BACD14 /* AuthView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		D00FE59F2C35215300BACD14 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		D00FE5A52C352E1900BACD14 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		D00FE5A72C352F4800BACD14 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		D00FE5A92C35309E00BACD14 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 				D00FE58D2C2CC33F00BACD14 /* NewPostForm.swift */,
 				D00FE59F2C35215300BACD14 /* MainTabView.swift */,
 				D00FE5872C2CA76100BACD14 /* PostsList.swift */,
+				D00FE5A92C35309E00BACD14 /* AuthView.swift */,
 				D00FE5892C2CA7F500BACD14 /* PostRow.swift */,
 			);
 			path = Views;
@@ -299,6 +302,7 @@
 				D00FE5882C2CA76100BACD14 /* PostsList.swift in Sources */,
 				D00FE59C2C32C91000BACD14 /* Alert+Error.swift in Sources */,
 				D00FE5A82C352F4800BACD14 /* AuthViewModel.swift in Sources */,
+				D00FE5AA2C35309E00BACD14 /* AuthView.swift in Sources */,
 				D00FE58E2C2CC33F00BACD14 /* NewPostForm.swift in Sources */,
 				D00FE59A2C2EB71E00BACD14 /* EmptyListView.swift in Sources */,
 				D00FE5A02C35215300BACD14 /* MainTabView.swift in Sources */,
