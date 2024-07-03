@@ -26,6 +26,7 @@
 		D00FE59E2C350D4800BACD14 /* PostRowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00FE59D2C350D4800BACD14 /* PostRowViewModel.swift */; };
 		D00FE5A02C35215300BACD14 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00FE59F2C35215300BACD14 /* MainTabView.swift */; };
 		D00FE5A32C352D7A00BACD14 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = D00FE5A22C352D7A00BACD14 /* FirebaseAuth */; };
+		D00FE5A62C352E1900BACD14 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00FE5A52C352E1900BACD14 /* AuthService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		D00FE59B2C32C91000BACD14 /* Alert+Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Alert+Error.swift"; sourceTree = "<group>"; };
 		D00FE59D2C350D4800BACD14 /* PostRowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRowViewModel.swift; sourceTree = "<group>"; };
 		D00FE59F2C35215300BACD14 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		D00FE5A52C352E1900BACD14 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 		D00FE56A2C2B8B3100BACD14 /* Socialcademy */ = {
 			isa = PBXGroup;
 			children = (
+				D00FE5A42C352DFE00BACD14 /* Services */,
 				D00FE5982C2EB6FA00BACD14 /* Supporting Views */,
 				D00FE5952C2E76AE00BACD14 /* Utilities */,
 				D00FE56B2C2B8B3100BACD14 /* SocialcademyApp.swift */,
@@ -170,6 +173,14 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D00FE5A42C352DFE00BACD14 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D00FE5A52C352E1900BACD14 /* AuthService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,6 +291,7 @@
 				D00FE5942C2CDE7000BACD14 /* PostsRepository.swift in Sources */,
 				D00FE5912C2CCCE400BACD14 /* PostsViewModel.swift in Sources */,
 				D00FE58A2C2CA7F500BACD14 /* PostRow.swift in Sources */,
+				D00FE5A62C352E1900BACD14 /* AuthService.swift in Sources */,
 				D00FE5972C2E76D800BACD14 /* Loadable.swift in Sources */,
 				D00FE5882C2CA76100BACD14 /* PostsList.swift in Sources */,
 				D00FE59C2C32C91000BACD14 /* Alert+Error.swift in Sources */,
