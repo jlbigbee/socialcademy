@@ -29,6 +29,7 @@
 		D00FE5A62C352E1900BACD14 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00FE5A52C352E1900BACD14 /* AuthService.swift */; };
 		D00FE5A82C352F4800BACD14 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00FE5A72C352F4800BACD14 /* AuthViewModel.swift */; };
 		D00FE5AA2C35309E00BACD14 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00FE5A92C35309E00BACD14 /* AuthView.swift */; };
+		D00FE5AC2C3530EE00BACD14 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00FE5AB2C3530EE00BACD14 /* ProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,7 @@
 		D00FE5A52C352E1900BACD14 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		D00FE5A72C352F4800BACD14 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		D00FE5A92C35309E00BACD14 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
+		D00FE5AB2C3530EE00BACD14 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 			children = (
 				D00FE58D2C2CC33F00BACD14 /* NewPostForm.swift */,
 				D00FE59F2C35215300BACD14 /* MainTabView.swift */,
+				D00FE5AB2C3530EE00BACD14 /* ProfileView.swift */,
 				D00FE5872C2CA76100BACD14 /* PostsList.swift */,
 				D00FE5A92C35309E00BACD14 /* AuthView.swift */,
 				D00FE5892C2CA7F500BACD14 /* PostRow.swift */,
@@ -299,6 +302,7 @@
 				D00FE58A2C2CA7F500BACD14 /* PostRow.swift in Sources */,
 				D00FE5A62C352E1900BACD14 /* AuthService.swift in Sources */,
 				D00FE5972C2E76D800BACD14 /* Loadable.swift in Sources */,
+				D00FE5AC2C3530EE00BACD14 /* ProfileView.swift in Sources */,
 				D00FE5882C2CA76100BACD14 /* PostsList.swift in Sources */,
 				D00FE59C2C32C91000BACD14 /* Alert+Error.swift in Sources */,
 				D00FE5A82C352F4800BACD14 /* AuthViewModel.swift in Sources */,
