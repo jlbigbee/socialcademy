@@ -42,7 +42,7 @@ class PostRowViewModel: ObservableObject {
         withErrorHandlingTask(perform: favoriteAction)
     }
 
-    private func withErrorHandlingTask(perform action: @escaping Action) {
+    private func withErrorHandlingTask(perform action: @escaping () async throws -> Void) {
         Task {
             do {
                 try await action()
