@@ -108,7 +108,6 @@
 			isa = PBXGroup;
 			children = (
 				D00FE56A2C2B8B3100BACD14 /* Socialcademy */,
-				D00FE5692C2B8B3100BACD14 /* Products */,
 				D00FE5A12C352D7A00BACD14 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -119,20 +118,22 @@
 				D00FE5682C2B8B3100BACD14 /* Socialcademy.app */,
 			);
 			name = Products;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		D00FE56A2C2B8B3100BACD14 /* Socialcademy */ = {
 			isa = PBXGroup;
 			children = (
+				D00FE5842C2CA52000BACD14 /* Models */,
+				D00FE5692C2B8B3100BACD14 /* Products */,
+				D00FE5922C2CDE2200BACD14 /* Repositories */,
+				D00FE5832C2C9F9700BACD14 /* Resources */,
 				D00FE5A42C352DFE00BACD14 /* Services */,
 				D00FE5982C2EB6FA00BACD14 /* Supporting Views */,
 				D00FE5952C2E76AE00BACD14 /* Utilities */,
-				D00FE56B2C2B8B3100BACD14 /* SocialcademyApp.swift */,
-				D00FE5922C2CDE2200BACD14 /* Repositories */,
-				D00FE58F2C2CCCAC00BACD14 /* View Models */,
-				D00FE5842C2CA52000BACD14 /* Models */,
 				D00FE5822C2C9F8D00BACD14 /* Views */,
-				D00FE5832C2C9F9700BACD14 /* Resources */,
+				D00FE58F2C2CCCAC00BACD14 /* View Models */,
+				D00FE56B2C2B8B3100BACD14 /* SocialcademyApp.swift */,
 			);
 			path = Socialcademy;
 			sourceTree = "<group>";
@@ -148,14 +149,14 @@
 		D00FE5822C2C9F8D00BACD14 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				D00FE58D2C2CC33F00BACD14 /* NewPostForm.swift */,
-				D00FE59F2C35215300BACD14 /* MainTabView.swift */,
-				D00FE5AB2C3530EE00BACD14 /* ProfileView.swift */,
-				D00FE5BF2C35BA4900BACD14 /* CommentsList.swift */,
-				D00FE5872C2CA76100BACD14 /* PostsList.swift */,
-				D00FE5C12C35BA7500BACD14 /* CommentRow.swift */,
 				D00FE5A92C35309E00BACD14 /* AuthView.swift */,
+				D00FE5C12C35BA7500BACD14 /* CommentRow.swift */,
+				D00FE5BF2C35BA4900BACD14 /* CommentsList.swift */,
+				D00FE59F2C35215300BACD14 /* MainTabView.swift */,
+				D00FE58D2C2CC33F00BACD14 /* NewPostForm.swift */,
 				D00FE5892C2CA7F500BACD14 /* PostRow.swift */,
+				D00FE5872C2CA76100BACD14 /* PostsList.swift */,
+				D00FE5AB2C3530EE00BACD14 /* ProfileView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -173,9 +174,9 @@
 		D00FE5842C2CA52000BACD14 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				D00FE5B72C35B91F00BACD14 /* Comment.swift */,
 				D00FE5852C2CA54600BACD14 /* Post.swift */,
 				D00FE5B12C353F0200BACD14 /* User.swift */,
-				D00FE5B72C35B91F00BACD14 /* Comment.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -183,14 +184,14 @@
 		D00FE58F2C2CCCAC00BACD14 /* View Models */ = {
 			isa = PBXGroup;
 			children = (
-				D00FE5902C2CCCE300BACD14 /* PostsViewModel.swift */,
-				D00FE5AD2C3531A100BACD14 /* FormViewModel.swift */,
 				D00FE5A72C352F4800BACD14 /* AuthViewModel.swift */,
-				D00FE5B52C35473D00BACD14 /* ViewModelFactory.swift */,
-				D00FE5CF2C35CB9800BACD14 /* ProfileViewModel.swift */,
-				D00FE5BD2C35BA2800BACD14 /* CommentsViewModel.swift */,
 				D00FE5C52C35BBD300BACD14 /* CommentRowViewModel.swift */,
+				D00FE5BD2C35BA2800BACD14 /* CommentsViewModel.swift */,
+				D00FE5AD2C3531A100BACD14 /* FormViewModel.swift */,
 				D00FE59D2C350D4800BACD14 /* PostRowViewModel.swift */,
+				D00FE5902C2CCCE300BACD14 /* PostsViewModel.swift */,
+				D00FE5CF2C35CB9800BACD14 /* ProfileViewModel.swift */,
+				D00FE5B52C35473D00BACD14 /* ViewModelFactory.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -198,8 +199,8 @@
 		D00FE5922C2CDE2200BACD14 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
-				D00FE5932C2CDE7000BACD14 /* PostsRepository.swift */,
 				D00FE5B92C35B94100BACD14 /* CommentsRepository.swift */,
+				D00FE5932C2CDE7000BACD14 /* PostsRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -218,9 +219,9 @@
 		D00FE5982C2EB6FA00BACD14 /* Supporting Views */ = {
 			isa = PBXGroup;
 			children = (
+				D00FE59B2C32C91000BACD14 /* Alert+Error.swift */,
 				D00FE5992C2EB71E00BACD14 /* EmptyListView.swift */,
 				D00FE5CD2C35C59100BACD14 /* ImagePickerButton.swift */,
-				D00FE59B2C32C91000BACD14 /* Alert+Error.swift */,
 				D00FE5AF2C353C1A00BACD14 /* PrimaryButtonStyle.swift */,
 				D00FE5D12C35CE7C00BACD14 /* ProfileImage.swift */,
 			);
